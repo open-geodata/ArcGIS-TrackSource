@@ -1,14 +1,12 @@
 # coding: utf8
 '''
-# -------------------------------------------------------------------------------------------------------
-# IMPORTAR SHAPEFILES DO PROJETO TRACKSOURCE PARA UM GEODATABASE
-# -------------------------------------------------------------------------------------------------------
-# Michel Metran
-# Setembro de 2017
+-------------------------------------------------------------------------------------------------------
+IMPORTAR SHAPEFILES DO PROJETO TRACKSOURCE PARA UM GEODATABASE
+-------------------------------------------------------------------------------------------------------
+Michel Metran
+Setembro de 2017
 
-# Script elaborado para criar uma base de dados do sistema viário, a partir dos dados do Proeto TrackSource.
-# http://tracksource.org.br/
-# 
+Script elaborado para criar uma base de dados vetorial do sistema viário, a partir dos dados do Proeto TrackSource.
 
 '''
 
@@ -23,8 +21,7 @@ sys.setdefaultencoding('utf8')
 
 # -------------------------------------------------------------------------------------------------------
 # Variável de Input
-project = r'E:\SIG_MP_BasesCartograficas\BR_TrackSource'
-shapefiles = os.path.join(project, 'Converter', 'Etapa_2_shp')
+project = r'C:\BR_TrackSource'
 
 # -------------------------------------------------------------------------------------------------------
 # Variáveis de Ambiente do ArcGIS
@@ -35,12 +32,12 @@ arcpy.env.overwriteOutput = True
 # Cria a pasta 'Dados Brutos', caso não exista.
 print '## Etapa 1: Create folders'
 
-directorys = ['Etapa_2_shp', 'Etapa_3_select', 'Etapa_4_copy']
+directorys = ['Geodata', 'Converter', 'Converter//Etapa_2_shp', 'Converter//Etapa_3_select', 'Converter//Etapa_4_copy']
 for directory in directorys:
     try:
-        os.makedirs(os.path.join(project, 'Converter', directory))        
+        os.makedirs(os.path.join(project, directory))        
     except OSError:
-        if not os.path.isdir(os.path.join(project, 'Converter', directory)):
+        if not os.path.isdir(os.path.join(project, directory)):
             raise
 
 # -------------------------------------------------------------------------------------------------------
@@ -48,6 +45,7 @@ for directory in directorys:
 print '## Etapa 2: Select best resolution'
 
 # Set workspace
+shapefiles = os.path.join(project, 'Converter', 'Etapa_2_shp')
 arcpy.env.workspace = shapefiles
 
 featureclasses = arcpy.ListFeatureClasses()

@@ -23,19 +23,18 @@ Somente com os arquivos shapefiles que o [script em python](Scripts/TrackSource.
 Fazer o *download* (ou cópia) do arquivo [TrackSource.py](Scripts/TrackSource.py) e executar.
 
 ## Pré-requisitos
-- TrackSource instalado;
-- GPSMapEdit instalado;
-- GlobalMapper instalado;
+- [TrackSource](http://tracksource.org.br/) instalado;
+- [GPSMapEdit](http://www.geopainting.com/) instalado;
+- [GlobalMapper](http://www.bluemarblegeo.com/products/global-mapper.php) instalado;
 - ArcGIS instalado;
 
 ## Autor
-* **Michel Metran**, veja [outros projetos](https://michelmetran.com)
+* **Michel Metran**, veja [outros projetos](https://github.com/michelmetran).
 
 Veja também a lista de [colaboradores](https://github.com/michelmetran/ArcGIS-TrackSource/settings/collaboration) que auxiliaram nesse projeto.
 
 ## Licença
 Esse projeto é licenciado sob a 'MIT License'.
-
 Veja o arquivo [LICENSE](LICENSE) para detalhes.
 
 ## Referências
