@@ -1,6 +1,6 @@
 # ArcGIS-TrackSource
 Cria base de dados do sistema viário do Brasil utilizando os mapas colaborativos do TrackSource.
-Além do Sistema Viário, todas as outras feições existentes no projeto TrackSource serão importadas para essa base de dados vetorial.
+Além do Sistema Viário, todas as outras feições existentes no projeto [TrackSource](http://tracksource.org.br/) serão importadas para essa base de dados vetorial.
 
 ## Para que serve?
 Os arquivos do projeto TrackSource são disponibilizados em formato .img (Garmin). Nele constam todas as estradas e vias do Brasil, mapeadas de forma colaborativa. Tais mapas, muito frequentemente, são melhores que aqueles disponibilizados pelo IBGE em escala 1:250.000.
