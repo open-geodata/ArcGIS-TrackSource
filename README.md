@@ -15,8 +15,8 @@ Somente com os arquivos shapefiles que o [script em python](Scripts/TrackSource.
 ![Transformation](ScreenShots/Transformation.png)
 
 ## Como usar o Script?
-1. Copiar todos os mapas .img (formato do TrackSource) da pasta aonde foi instalado o TrackSource para ..\Etapa_1\Maps
-2. Aplicar a macro ConvertToNTM.vbs...que se encontra dentro de E:\GIS_Outros\BR_TrackSource\Converter\Etapa_1_img
+1. Copiar todos os mapas .img (formato do TrackSource) da pasta aonde foi instalado o TrackSource para ..BR_TrackSource\Converter\Etapa_1_img\Maps
+2. Aplicar a macro ConvertToNTM.vbs...que se encontra dentro de ...BR_TrackSource\Converter\Etapa_1_img
 3. Colocar os arquivos em formato .mp na pasta ..\Etapa_2
 4. Usando a ferramenta Batch, interna, do Global Mapper, converter os arquivos .mp para shapefile...
 
